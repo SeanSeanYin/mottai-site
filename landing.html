@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mottai・モッタイ — 到期與庫存管理 / Expiry &amp; Stock Tracker</title>
+<meta name="description" content="掃碼記錄食物、日用品與美妝的到期日與存量，到期前主動提醒，還能分析花費、和家人共用庫存。">
+<style>
+  :root{
+    --green:#3f7a4f; --green-2:#6aa06f; --cream:#f4f6ef; --ink:#20261f; --muted:#6b7268;
+    color-scheme: light dark;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Noto Sans TC","Hiragino Sans",sans-serif;
+       color:var(--ink);background:var(--cream);line-height:1.65}
+  a{color:var(--green)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header.hero{background:linear-gradient(160deg,#e8f0e3,#cfe3cf 60%,#bcd8bd);
+              padding:72px 0 64px;text-align:center}
+  .logo{font-size:2.6rem;font-weight:800;letter-spacing:.5px;color:var(--green)}
+  .tag{font-size:1.15rem;color:#33402f;margin:.4rem 0 1.6rem}
+  .sub{max-width:560px;margin:0 auto;color:#3c4a37}
+  .cta{display:inline-block;margin-top:26px;background:var(--green);color:#fff;
+       text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px}
+  .cta.secondary{background:transparent;color:var(--green);border:1.5px solid var(--green);margin-left:8px}
+  section{padding:56px 0}
+  h2{font-size:1.5rem;margin:0 0 28px;text-align:center}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:#fff8;backdrop-filter:blur(4px);border:1px solid #0001;border-radius:16px;padding:22px}
+  .card h3{margin:.2rem 0 .4rem;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted);font-size:.96rem}
+  .emoji{font-size:1.6rem}
+  footer{padding:40px 0 64px;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{margin:0 8px}
+  @media (prefers-color-scheme: dark){
+    body{background:#161a15;color:#e8ece6}
+    header.hero{background:linear-gradient(160deg,#20301f,#1c2a1c 60%,#182618)}
+    .card{background:#ffffff10;border-color:#ffffff1a}
+    .card p{color:#aab3a6}.tag{color:#cfe0cd}.sub{color:#c3d1bf}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">Mottai・モッタイ</div>
+    <div class="tag">別再讓東西過期浪費・Never waste what expires</div>
+    <p class="sub">掃碼記錄食物、日用品與美妝的到期日與存量，到期前主動提醒；還能分析每月花費與 CP 值，和家人共用同一份庫存。</p>
+    <div>
+      <a class="cta" href="#features">看看功能</a>
+      <a class="cta secondary" href="support.html">支援 / Support</a>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <h2>主要功能 / Features</h2>
+    <div class="grid">
+      <div class="card"><div class="emoji">📷</div><h3>掃碼快速記錄</h3><p>掃描條碼帶入商品名，補上到期日、數量與存放位置，幾秒完成。</p></div>
+      <div class="card"><div class="emoji">⏰</div><h3>到期前提醒</h3><p>多階段提醒（當天／3 天／7 天前），在你指定的時間送出。</p></div>
+      <div class="card"><div class="emoji">🗂️</div><h3>依分類分組</h3><p>兩層分類、可切換分組檢視，冰箱、浴室、廚房一目了然。</p></div>
+      <div class="card"><div class="emoji">📊</div><h3>進階花費分析</h3><p>庫存總值、每月花費、浪費金額與每單位 CP 值，買得更聰明。</p></div>
+      <div class="card"><div class="emoji">👨‍👩‍👧</div><h3>家庭共享</h3><p>建立群組邀請家人，一起維護同一份庫存（受邀免費）。</p></div>
+      <div class="card"><div class="emoji">📱</div><h3>主畫面 Widget</h3><p>主畫面與鎖定畫面一眼看到即將到期的東西。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>一次購買、永久解鎖完整版・One-time purchase, unlock forever</p>
+    <p>
+      <a href="privacy-policy.html">隱私政策 Privacy</a>·
+      <a href="support.html">支援 Support</a>·
+      <a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a>
+    </p>
+    <p>© 2026 Mottai</p>
+  </div>
+</footer>
+
+</body>
+</html>
