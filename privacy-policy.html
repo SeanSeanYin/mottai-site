@@ -25,7 +25,7 @@
 <!-- =========================== 繁體中文 =========================== -->
 <section id="zh">
 <h1>Mottai 隱私政策</h1>
-<p class="updated">最後更新：2026 年 7 月 25 日</p>
+<p class="updated">最後更新：2026 年 8 月 13 日</p>
 
 <p>Mottai（下稱「本 App」）是一款到期與庫存管理工具。我們重視你的隱私，本政策說明本 App 如何處理資料。</p>
 
@@ -36,8 +36,12 @@
 <h3>條碼與商品資料（可選）</h3>
 <p>當你掃描或輸入條碼時，本 App 會將該<strong>條碼</strong>傳送給公開的商品資料庫（Open Food Facts）以查詢商品名稱。若你在設定中開啟「幫助改善商品資料庫」（預設開啟，可隨時關閉），儲存物品時本 App 會<strong>匿名</strong>上傳「條碼、商品名稱、品牌、分類」以豐富共用的商品資料庫。此上傳<strong>不包含</strong>你的照片、到期日、數量、存放位置、備註或任何可辨識你個人身分的資訊，也不會與你的身分連結。</p>
 
-<h3>家庭共享（可選）</h3>
-<p>若你使用家庭共享功能，你選擇共享的物品會透過 Apple 的 CloudKit 與你邀請的成員共享。此功能由 Apple iCloud 提供，開發者不經手你的共享內容。</p>
+<h3>家庭共享與即時通知（可選，雲端方案）</h3>
+<p>若你使用家庭共享功能，你選擇共享的物品會透過 Apple 的 <strong>CloudKit</strong> 與你邀請的成員共享；此部分由 Apple iCloud 提供，開發者不經手你的共享內容。</p>
+<p>為了在成員新增／用完物品、加入或離開群組時送出<strong>即時通知</strong>，本 App 會使用 Google 的 <strong>Firebase（Cloud Messaging、Firestore、匿名登入）</strong>。此服務僅儲存與傳送：你的<strong>裝置推播 token</strong>、你自訂的<strong>暱稱</strong>（emoji 圖示，非真實姓名）、以及<strong>群組成員關係</strong>（群組名稱、是否為擁有者、加入時間）。變更事件在通知送出後即刪除。此處<strong>不包含</strong>你的物品內容、照片、到期日、金額或任何可辨識個人身分的資訊。登入採<strong>匿名</strong>方式，你不需輸入任何帳號密碼。這些資料僅用於提供家庭共享通知，<strong>不用於廣告或追蹤</strong>。此功能僅在你使用雲端方案的家庭共享時才啟用。</p>
+
+<h3>當機診斷（所有使用者）</h3>
+<p>為了找出並修正問題、提升穩定度，本 App 使用 Google 的 <strong>Firebase Crashlytics</strong> 蒐集<strong>當機診斷資料</strong>：當機堆疊記錄、當機發生時的裝置與作業系統狀態，以及一組 Crashlytics 產生的隨機安裝識別碼。此蒐集適用於<strong>所有使用者</strong>（不限家庭共享）。當機診斷<strong>不包含</strong>你的物品內容、照片、到期日、金額，也<strong>不用於廣告或跨 App 追蹤</strong>，僅用於改善 App 品質。</p>
 
 <h2>相機與相簿權限</h2>
 <p>本 App 會在你主動使用時，請求相機（用於掃描條碼與拍攝物品照片）與相簿（用於選取照片）權限。照片僅儲存在你的裝置與 iCloud 中。</p>
@@ -45,7 +49,7 @@
 <h2>我們不做的事</h2>
 <ul>
   <li>不收集可辨識你個人身分的資料。</li>
-  <li>不使用第三方廣告或分析追蹤（不使用 IDFA）。</li>
+  <li>不使用第三方廣告，也不做跨 App／跨網站追蹤（不使用 IDFA）。當機診斷（Crashlytics）僅用於改善 App 品質，見上。</li>
   <li>不將你的個人資料販售或分享給第三方。</li>
 </ul>
 
@@ -64,7 +68,7 @@
 <!-- =========================== English =========================== -->
 <section id="en">
 <h1>Mottai Privacy Policy</h1>
-<p class="updated">Last updated: July 25, 2026</p>
+<p class="updated">Last updated: August 13, 2026</p>
 
 <p>Mottai (the “App”) is an expiry &amp; inventory tracking tool. We respect your privacy. This policy explains how the App handles data.</p>
 
@@ -75,8 +79,12 @@
 <h3>Barcode &amp; product data (optional)</h3>
 <p>When you scan or enter a barcode, the App sends only that <strong>barcode</strong> to a public product database (Open Food Facts) to look up a product name. If you enable “Help improve the product database” in Settings (on by default, can be turned off anytime), saving an item will <strong>anonymously</strong> upload the barcode, product name, brand and category to enrich a shared product database. This upload does <strong>not</strong> include your photos, expiry dates, quantities, storage locations, notes, or any information that identifies you, and is not linked to your identity.</p>
 
-<h3>Family sharing (optional)</h3>
-<p>If you use family sharing, the items you choose to share are shared with people you invite via Apple’s CloudKit. This feature is provided by Apple iCloud; the developer does not handle your shared content.</p>
+<h3>Family sharing &amp; real-time alerts (optional, Cloud plan)</h3>
+<p>If you use family sharing, the items you choose to share are shared with people you invite via Apple’s <strong>CloudKit</strong>; this part is provided by Apple iCloud and the developer does not handle your shared content.</p>
+<p>To deliver <strong>real-time notifications</strong> when a member adds or uses up an item, or joins or leaves a group, the App uses Google’s <strong>Firebase (Cloud Messaging, Firestore, anonymous sign-in)</strong>. This service stores and sends only: your <strong>device push token</strong>, the <strong>nickname</strong> you set (an emoji, not your real name), and your <strong>group membership</strong> (group name, owner flag, join time). Change events are deleted once the notification is sent. It does <strong>not</strong> include your item contents, photos, expiry dates, prices, or any personally identifiable information. Sign-in is <strong>anonymous</strong> — you never enter any credentials. This data is used only to deliver family-sharing notifications and is <strong>not used for advertising or tracking</strong>. This applies only when you use family sharing on the Cloud plan.</p>
+
+<h3>Crash diagnostics (all users)</h3>
+<p>To find and fix problems and improve stability, the App uses Google’s <strong>Firebase Crashlytics</strong> to collect <strong>crash diagnostics</strong>: crash stack traces, the device and OS state at the time of a crash, and a random Crashlytics-generated installation identifier. This collection applies to <strong>all users</strong> (not only family sharing). Crash diagnostics do <strong>not</strong> include your item contents, photos, expiry dates, or prices, and are <strong>not used for advertising or cross-app tracking</strong> — only to improve app quality.</p>
 
 <h2>Camera &amp; Photos</h2>
 <p>The App requests camera (to scan barcodes and take item photos) and photo library (to pick photos) access only when you actively use those features. Photos are stored only on your device and in iCloud.</p>
@@ -84,7 +92,7 @@
 <h2>What we don’t do</h2>
 <ul>
   <li>We do not collect personally identifiable information.</li>
-  <li>We do not use third-party advertising or analytics tracking (no IDFA).</li>
+  <li>We do not use third-party advertising, and we do not track you across apps or websites (no IDFA). Crash diagnostics (Crashlytics) are used only to improve app quality, as described above.</li>
   <li>We do not sell or share your personal data with third parties.</li>
 </ul>
 
@@ -103,7 +111,7 @@
 <!-- =========================== 日本語 =========================== -->
 <section id="ja">
 <h1>Mottai プライバシーポリシー</h1>
-<p class="updated">最終更新日：2026年7月25日</p>
+<p class="updated">最終更新日：2026年8月13日</p>
 
 <p>Mottai（以下「本アプリ」）は、賞味期限と在庫を管理するツールです。私たちはお客様のプライバシーを尊重します。本ポリシーは、本アプリがデータをどのように扱うかを説明します。</p>
 
@@ -114,8 +122,12 @@
 <h3>バーコードと商品データ（任意）</h3>
 <p>バーコードをスキャンまたは入力すると、本アプリはその<strong>バーコード</strong>のみを公開商品データベース（Open Food Facts）に送信して商品名を検索します。設定で「商品データベースの改善に協力」をオン（初期状態オン、いつでもオフ可）にしている場合、アイテム保存時に「バーコード・商品名・ブランド・分類」を<strong>匿名で</strong>アップロードし、共有の商品データベースを充実させます。このアップロードには、写真・賞味期限・数量・保管場所・メモ、その他お客様を特定する情報は<strong>含まれず</strong>、お客様の身元とも結び付けられません。</p>
 
-<h3>ファミリー共有（任意）</h3>
-<p>ファミリー共有を使用する場合、共有を選択したアイテムは Apple の CloudKit を通じて招待した相手と共有されます。本機能は Apple iCloud により提供され、開発者が共有内容を扱うことはありません。</p>
+<h3>ファミリー共有と即時通知（任意・クラウドプラン）</h3>
+<p>ファミリー共有を使用する場合、共有を選択したアイテムは Apple の <strong>CloudKit</strong> を通じて招待した相手と共有されます。この部分は Apple iCloud により提供され、開発者が共有内容を扱うことはありません。</p>
+<p>メンバーがアイテムを追加・使い切ったとき、グループに参加・退出したときに<strong>即時通知</strong>を送るため、本アプリは Google の <strong>Firebase（Cloud Messaging・Firestore・匿名ログイン）</strong>を使用します。このサービスが保存・送信するのは、<strong>端末のプッシュトークン</strong>、設定した<strong>ニックネーム</strong>（絵文字であり、本名ではありません）、および<strong>グループのメンバー情報</strong>（グループ名・オーナーかどうか・参加日時）のみです。変更イベントは通知の送信後に削除されます。アイテムの内容・写真・賞味期限・金額、その他個人を特定できる情報は<strong>含まれません</strong>。ログインは<strong>匿名</strong>で、認証情報の入力は不要です。これらのデータはファミリー共有の通知配信のみに使用され、<strong>広告やトラッキングには使用しません</strong>。本機能はクラウドプランのファミリー共有を使用する場合にのみ有効になります。</p>
+
+<h3>クラッシュ診断（すべてのユーザー）</h3>
+<p>問題の発見・修正と安定性向上のため、本アプリは Google の <strong>Firebase Crashlytics</strong> を使用して<strong>クラッシュ診断データ</strong>を収集します：クラッシュのスタックトレース、クラッシュ発生時の端末・OS の状態、および Crashlytics が生成するランダムなインストール識別子。この収集は<strong>すべてのユーザー</strong>（ファミリー共有に限りません）に適用されます。クラッシュ診断には、アイテムの内容・写真・賞味期限・金額は<strong>含まれず</strong>、<strong>広告やアプリをまたぐトラッキングには使用しません</strong>。アプリの品質改善のみに使用します。</p>
 
 <h2>カメラと写真</h2>
 <p>本アプリは、お客様がその機能を使用するときにのみ、カメラ（バーコードのスキャンとアイテムの写真撮影）および写真ライブラリ（写真の選択）へのアクセスを求めます。写真は端末と iCloud にのみ保存されます。</p>
@@ -123,7 +135,7 @@
 <h2>行わないこと</h2>
 <ul>
   <li>個人を特定できる情報を収集しません。</li>
-  <li>第三者による広告・分析トラッキングを使用しません（IDFA 不使用）。</li>
+  <li>第三者による広告を使用せず、アプリやサイトをまたぐトラッキングも行いません（IDFA 不使用）。クラッシュ診断（Crashlytics）はアプリの品質改善のみに使用します（上記参照）。</li>
   <li>お客様の個人データを第三者に販売・共有しません。</li>
 </ul>
 
