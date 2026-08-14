@@ -34,11 +34,20 @@
   .emoji{font-size:1.6rem}
   footer{padding:40px 0 64px;text-align:center;color:var(--muted);font-size:.9rem}
   footer a{margin:0 8px}
+  #changelog{background:#0000000a}
+  .vers{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+  .ver{background:#fff8;border:1px solid #0001;border-radius:16px;padding:20px 22px}
+  .vhead{display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+  .vnum{font-weight:800;color:var(--green);font-size:1.1rem}
+  .vdate{color:var(--muted);font-size:.85rem}
+  .ver p{margin:0;color:var(--muted);font-size:.96rem}
   @media (prefers-color-scheme: dark){
     body{background:#161a15;color:#e8ece6}
     header.hero{background:linear-gradient(160deg,#20301f,#1c2a1c 60%,#182618)}
-    .card{background:#ffffff10;border-color:#ffffff1a}
-    .card p{color:#aab3a6}.tag{color:#cfe0cd}.sub{color:#c3d1bf}
+    .card,.ver{background:#ffffff10;border-color:#ffffff1a}
+    .card p,.ver p{color:#aab3a6}.tag{color:#cfe0cd}.sub{color:#c3d1bf}
+    #changelog{background:#ffffff08}
+    .vdate{color:#8f998a}
   }
 </style>
 </head>
@@ -51,6 +60,7 @@
     <p class="sub">掃描條碼記錄食物、日用品與美妝的到期日與存量，到期前主動提醒；還能分析每月花費與 CP 值，和家人共用同一份庫存。<span class="en">Scan to track expiry dates and stock for food, household items, and cosmetics. Get reminders before things go off, see where your money goes, and share one inventory with your family.</span><span class="ja">食品・日用品・コスメの賞味期限と在庫をスキャンで記録。期限前にお知らせし、毎月の支出や単価も分析。家族と同じ在庫を共有できます。</span></p>
     <div>
       <a class="cta" href="#features">看看功能 / See features / 機能を見る</a>
+      <a class="cta secondary" href="#changelog">版本更新 / What’s New / 更新履歴</a>
       <a class="cta secondary" href="support.html">支援 / Support / サポート</a>
     </div>
   </div>
@@ -68,6 +78,40 @@
       <div class="card"><div class="emoji">🧾</div><h3>消費歷史</h3><p>用掉、丟掉了什麼，何時、花了多少，一條時間軸看清楚；個人與家庭共享一起看，點一下即可回到商品。<span class="en">A single timeline of what you used or discarded, when, and how much — personal and family-shared together. Tap to jump back to the item.</span><span class="ja">使い切った・処分したものを、いつ・いくらで振り返れるタイムライン。個人と共有をまとめて表示し、タップで商品へ戻れます。</span></p></div>
       <div class="card"><div class="emoji">🔢</div><h3>逐份追蹤（批次）</h3><p>同一項物品分批買、每批到期日不同也管得住，逐份提醒、逐份用完或丟棄。<span class="en">Buy the same item in separate lots with different expiry dates — each unit is tracked, reminded, and used up on its own.</span><span class="ja">同じ品を別ロットで購入し、賞味期限が違ってもOK。1個ごとに通知・使用・処分できます。</span></p></div>
       <div class="card"><div class="emoji">📱</div><h3>主畫面 Widget</h3><p>主畫面與鎖定畫面一眼看到即將到期的東西。<span class="en">See what’s expiring at a glance on your Home and Lock Screen.</span><span class="ja">ホーム画面・ロック画面で、期限が近いものを一目で確認。</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="changelog">
+  <div class="wrap">
+    <h2>版本更新 / What’s New / 更新履歴</h2>
+    <div class="vers">
+
+      <div class="ver">
+        <div class="vhead"><span class="vnum">v1.4.0</span><span class="vdate">2026-08-14</span></div>
+        <p>卡夾體驗打磨——載具條碼放大更清楚（比照超商掃描）、Widget 一點即開對應卡、卡面新增多種顏色、掃碼建卡自動防重複。<span class="en">Card Wallet polish — clearer enlarged carrier barcodes for store scanners, tap the widget to open the right card, more card colors, and duplicate-safe scan-to-add.</span><span class="ja">カードウォレットを改良——キャリアバーコードの拡大表示をより鮮明に（店頭スキャン向け）、ウィジェットのタップで該当カードを表示、カード色を追加、スキャン追加の重複を自動で防止。</span></p>
+      </div>
+
+      <div class="ver">
+        <div class="vhead"><span class="vnum">v1.3.0</span><span class="vdate">2026-08-13</span></div>
+        <p>逐份追蹤（批次）、消費歷史時間軸、深色模式、購買來源，以及家庭共享的補貨通知。<span class="en">Per-unit batch tracking, a consumption-history timeline, dark mode, purchase source, and restock alerts for shared groups.</span><span class="ja">ロット別の個数管理、消費履歴のタイムライン、ダークモード、購入元、共有グループの買い足し通知。</span></p>
+      </div>
+
+      <div class="ver">
+        <div class="vhead"><span class="vnum">v1.2.0</span><span class="vdate">2026-08-12</span></div>
+        <p>卡夾——收納電子發票載具與多張會員卡，掃卡建卡、滑動切換；新增「掃描查庫存」，掃條碼即查已有的量與存放位置。<span class="en">Card Wallet for your e-invoice carrier and membership cards — scan to add, swipe to switch; plus Scan to Check Stock to see what you already have and where.</span><span class="ja">カードウォレットでレシート用キャリアバーコードや会員カードを収納（スキャンで追加・スワイプで切替）。「在庫スキャン確認」で手持ちと保管場所をすぐ確認。</span></p>
+      </div>
+
+      <div class="ver">
+        <div class="vhead"><span class="vnum">v1.1.0</span><span class="vdate">2026-08-08</span></div>
+        <p>家庭共享大升級——新增／用完／加入即時通知、暱稱署名、群組管理；並導入雲端方案訂閱（受邀家人免費）。<span class="en">A big family-sharing upgrade — instant notifications, nickname attribution, and group management; introduces the Cloud subscription (invited family join free).</span><span class="ja">ファミリー共有を大幅強化——即時通知・ニックネーム表示・グループ管理。クラウドプラン（招待された家族は無料）を導入。</span></p>
+      </div>
+
+      <div class="ver">
+        <div class="vhead"><span class="vnum">v1.0.0</span><span class="vdate">2026-07-21</span></div>
+        <p>首次發布——掃描條碼記錄到期與存量、多階段到期提醒、進階花費分析、家庭共享，以及主畫面／鎖定畫面到期 Widget。<span class="en">First release — scan barcodes to track expiry and stock, multi-stage reminders, spending analysis, family sharing, and Home/Lock Screen widgets.</span><span class="ja">初回リリース——バーコードで賞味期限と在庫を記録、多段階リマインダー、支出分析、ファミリー共有、ホーム／ロック画面ウィジェット。</span></p>
+      </div>
+
     </div>
   </div>
 </section>
