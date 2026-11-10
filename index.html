@@ -93,6 +93,7 @@
   .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:820px;margin:0 auto}
   .card.app{display:flex;gap:16px;align-items:flex-start}
   .card.app img{width:64px;height:64px;border-radius:15px;flex:none;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.apps>.card.app:last-child:nth-child(odd){grid-column:1/-1}
   .apptag{color:var(--accent);font-size:.85rem;font-weight:600;margin-bottom:4px}
   .applinks{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
   .mini{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:999px;border:1.5px solid var(--accent)}
@@ -162,9 +163,10 @@
 <section id="apps" class="alt">
   <div class="wrap">
     <h2><span class="zh">同一位開發者的其他 App</span><span class="en">More apps by the same developer</span><span class="ja">同じ開発者の他のアプリ</span></h2>
-    <p class="lede"><span class="zh">用同樣的心意做的另外兩款 App。</span><span class="en">Two more apps made with the same care.</span><span class="ja">同じ思いで作った、もう2つのアプリです。</span></p>
+    <p class="lede"><span class="zh">用同樣的心意做的另外三款 App。</span><span class="en">Three more apps made with the same care.</span><span class="ja">同じ思いで作った、もう3つのアプリです。</span></p>
     <div class="apps">
       <div class="card app"><img src="matchabook-icon.png" alt="" width="64" height="64"><div><h3>Matchabook 抹茶誌</h3><div class="apptag"><span class="zh">抹茶記錄</span><span class="en">A matcha journal</span><span class="ja">抹茶の記録</span></div><p><span class="zh">記錄每一罐抹茶的用量、心得與賞味期限，分階段陪你刷好一碗茶，並在快到期前提醒你。</span><span class="en">Track every tin's usage, notes and best-by date, whisk with a guided timer, and get reminded before it's past its prime.</span><span class="ja">一缶ごとの使用量・感想・賞味の目安を記録。段階タイマーで点てるのをお手伝いし、期限前にお知らせします。</span></p><div class="applinks"><a class="mini" href="https://seanseanyin.github.io/matchabook-site/"><span class="zh">看介紹</span><span class="en">Learn more</span><span class="ja">詳しく見る</span></a><a class="mini ghost" href="https://apps.apple.com/app/id6787303953">App Store</a></div></div></div><div class="card app"><img src="inkday-icon.png" alt="" width="64" height="64"><div><h3>Inkday 墨日記</h3><div class="apptag"><span class="zh">私人日記</span><span class="en">A private journal</span><span class="ja">プライベート日記</span></div><p><span class="zh">一日一篇、只存在你自己的 iCloud；沒有伺服器、沒有廣告，寫日記永遠免費。</span><span class="en">One entry a day, kept only in your own iCloud — no servers, no ads, and writing is always free.</span><span class="ja">1日1ページ、データはご自身の iCloud にだけ。サーバーも広告もなく、書くことはずっと無料です。</span></p><div class="applinks"><a class="mini" href="https://seanseanyin.github.io/inkday-site/"><span class="zh">看介紹</span><span class="en">Learn more</span><span class="ja">詳しく見る</span></a><a class="mini ghost" href="https://apps.apple.com/app/id6797171199">App Store</a></div></div></div>
+      <div class="card app"><img src="quickledger-icon.png" alt="" width="64" height="64"><div><h3>快計帳 QuickLedger</h3><div class="apptag"><span class="zh">快速記帳・三大報表</span><span class="en">Quick, true bookkeeping</span><span class="ja">すばやい本格記帳</span></div><p><span class="zh">記一筆只要幾秒，卻是真正的複式記帳：預算、圖表與資產負債表、損益表、現金流量表一次到位。免註冊、沒有廣告。</span><span class="en">Log an entry in seconds, with true double-entry bookkeeping: budgets, charts and all three financial statements. No sign-up, no ads.</span><span class="ja">数秒で記帳できる本格的な複式簿記。予算、グラフ、貸借対照表・損益計算書・キャッシュフロー計算書までそろいます。登録不要、広告なし。</span></p><div class="applinks"><a class="mini" href="https://seanseanyin.github.io/quickledger-site/"><span class="zh">看介紹</span><span class="en">Learn more</span><span class="ja">詳しく見る</span></a><a class="mini ghost" href="https://apps.apple.com/app/id6822776320">App Store</a></div></div></div>
     </div>
   </div>
 </section>
